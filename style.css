@@ -9,8 +9,28 @@ margin: 0px 20px;
 }
 
 .home-container{
-    margin-top: 5%;
-    padding-bottom: 2%;
+    background-image:linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)), url('images/bg-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container h1{
+    color: white;
+    font-weight: bold;
+}
+.form-container{
+    background-image:linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)), url('images/bg-2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 3% 2%;
+}
+.nav-tabs{
+    border: none;
 }
 .container .nav{
     justify-content: center;
@@ -52,23 +72,75 @@ hr{
     height: 2px;
 }
 
+/* Contact Us page */
+.contact-container{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url('images/bg-3.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+}
+.contact-container h1{
+    color: white;
+    font-weight: bold;
+}
+.contact-text{
+    letter-spacing: 1.2px;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+/* About Page */
+.about-container{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url('images/bg-4.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+}
+.about-container h1{
+    color: white;
+    font-weight: bold;
+}
+.fact-container{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url('images/about-2.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3% 8%;
+}
+.about-text{
+    letter-spacing: 1.2px;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+.about-col{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url('images/about.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.feature:hover .fa-solid{
+    color: white;
+}
+
+
+
+
 @media screen and (max-width:1250px){
-    .home-container{
-        margin-top: 10%;
-        padding-bottom: 4%;
-    }
+    
 }
 @media screen and (max-width:600px){
-    .home-container{
-        margin-top: 15%;
-        padding-bottom: 5%;
-    }
+    
 }
 @media screen and (max-width:400px){
-    .home-container{
-        margin-top: 20%;
-        padding-bottom: 5%;
-    }
+    
 }
 
 

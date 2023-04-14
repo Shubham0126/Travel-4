@@ -37,7 +37,17 @@ a:not([href]):not([class]):hover {
   }
 
   /* Carousel */
-
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
  
 
   #carouselExampleCaptions{
@@ -52,6 +62,8 @@ a:not([href]):not([class]):hover {
     left: 0;
     right: 0;
     bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
@@ -169,10 +181,27 @@ a:not([href]):not([class]):hover {
     }
   }
   @media (max-width: 576px) {
+    #carouselExampleCaptions{
+      padding-top: 8%;
+    }
     .carousel-caption h4 {
       font-size: 18px;
     }
     .carousel-caption h1 {
       font-size: 30px;
+    }
+  }
+  @media (max-width: 400px) {
+    #carouselExampleCaptions{
+      padding-top: 15%;
+    }
+    .carousel-caption a {
+      display: none;
+    }
+    .carousel-caption h4 {
+      font-size: 10px;
+    }
+    .carousel-caption h1 {
+      font-size: 22px;
     }
   }

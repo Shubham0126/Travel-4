@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.15;
     background-color: #F3F3F3;
 }
@@ -21,7 +21,9 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 /* Navbar */
-
+.active{
+  color: #527a20!important;
+}
 .nav-bar::before {
     position: absolute;
     content: "";
@@ -34,6 +36,9 @@ a:not([href]):not([class]):hover {
   .nav-link{
     font-size: 1.2rem;
     margin: 10px 20px;
+  }
+  .navbar{
+    position: sticky;
   }
 
   /* Carousel */
@@ -50,7 +55,7 @@ a:not([href]):not([class]):hover {
 }
  
 
-  #carouselExampleCaptions{
+  #carouselExampleCaptions , .home-header{
     margin-top: -42px;
   }
 
@@ -133,15 +138,19 @@ a:not([href]):not([class]):hover {
   }
 
   
-.service-item {
+.service-item , .contact-item{
   transition: .5s;
 }
 
-.service-item:hover {
-  box-shadow: 0 0 30px #CCCCCC;
+.service-item:hover , .contact-item:hover{
+  box-shadow: 0 0 30px #cccccc;
+ 
+}
+.about-menu:hover{
+  text-decoration: none;
 }
 
-.service-item i {
+.service-item i , .contact-item i{
   width: 75px;
   height: 75px;
   display: flex;
@@ -153,10 +162,11 @@ a:not([href]):not([class]):hover {
   transition: .5s;
 }
 
-.service-item:hover i {
+.service-item:hover i , .contact-item:hover i{
   background: #7AB730;
   color: #FFFFFF;
 }
+
 
 
 .input-group-append {
@@ -173,6 +183,24 @@ a:not([href]):not([class]):hover {
   .text-primary{
     color: #7AB730 !important ;
   }
+
+  .home-header{
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.8)) , url('images/carousel-2.jpg') , no-repeat center center;
+    background-size: cover;
+   
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .form-row > .col,
+  .form-row > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
   @media (min-width: 768px) {
     .booking {
       position: relative;

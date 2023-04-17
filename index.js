@@ -6,8 +6,10 @@
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn();
+            $('.navbar').addClass('fixed-top')
         } else {
             $('#back-to-top').fadeOut();
+            $('.navbar').removeClass('fixed-top')
         }
     });
     
